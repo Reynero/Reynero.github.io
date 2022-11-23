@@ -1,0 +1,33 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    color: #3d3c3c;
+    background-color: #bfbbbb;
+    background:linear-gradient(to right, #2d2d2d, #6d6a6a, #2d2d2d);
+    /*Linear Gradients (goes down/up/left/right/diagonally)*/
+}
+nav h1{
+    font-family: 'PT Serif', serif;
+    font-size: 3rem;
+    margin-left: 2rem;
+    transform: skewY(-2deg) translateY(11.5rem);
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30rem;
+    background-color: white;
+    align-items: center;
+    border-bottom: 2px solid black;
+    transform: skewY(2deg) translateY(-22rem);
+}
+
