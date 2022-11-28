@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=PT+Serif&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
+   
+
+
     <nav>
         <h1 class="nav-name">
             <a href="./index.html">
@@ -20,19 +23,19 @@
             </a>
         </h1>
         <ul class="nav-ul">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#title-about">About Me</a></li>
+            <li><a href="#carru">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
        
     </nav>
     <header>
-        <h1 class="title">About Me</h1>
+        <h1 id="title-about">About Me</h1>
         <section class="header-body">
             <ul class="header-ul">
-                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/reynero.torrico"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/reynero-g-donald-torrico-a42a57184/"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fab fa-github-square"></i></a></li>
             </ul>
             <article class="descrip">
@@ -40,7 +43,7 @@
                     Hi There, Welcome To My Page! 
                 </h1>
                 <p>
-                    I'm Reynero, fullstack web developer (mostly front-end though) and a web applications<br> programmer, 
+                    I'm Reynero, fullstack web developer (mostly front-end though) and a software<br>  developer,
                     currently studying Systems Engineering, i'm eager to learn more everyday in<br> this awesome world of 
                     coding.<br><br>"perseverance overcomes any other human quality in the path to reach your goals"
                 </p>
@@ -54,69 +57,126 @@
         
     </header>
     <main>
-        <section class="carru">
-            <h1 class="title2">Portfolio</h1>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <section id="carru">
+            <section class="main-descrip">
+                <h1 class="title2">-Portfolio-</h1>
+                <h4>Recent Projects</h4>
+            </section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <section class="c-first">
+                        <article class="c-descrip">
+                            <h1>Grand Hotel</h1>
+                            <p>This is the head page of a hotel,<br> made with HTML and CSS</p>
+                        </article>
+                        <figure>
+                            <img src="./IMG/2.PNG" alt="hotel">
+                            <a href="http://bigtime.freeoda.com/w/HTMLhotel/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
+                        </figure>
+                        
+                    </section>
+                  </div>
+                  <div class="carousel-item">
+                    <section class="c-second">
+                        <article class="c-descrip">
+                            <h1>Developers Directory</h1>
+                            <p>A directory of developers where you can find the right person to work with you, made with HTML, CSS and Javascript</p>
+                        </article>
+                        <figure>
+                            <img src="./IMG/6.PNG" alt="directory">
+                            <a href="http://bigtime.freeoda.com/w/devDirec/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
+                        </figure>
+                    </section>
+                  </div>
+                  <div class="carousel-item">
+                    <section class="c-third">
+                        <article class="c-descrip">
+                            <h1>JS Practice</h1>
+                            <p>This webpage stores several useful Javascript components and functions which help me to improve my skills.</p>
+                        </article>
+                        <figure>
+                            <img src="./IMG/7.PNG" alt="JS">
+                            <a href="http://bigtime.freeoda.com/w/webPageExercise/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
+                        </figure>
+                    </section>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <h3 class="more-projects"><a href="http://bigtime.freeoda.com/">See More</a> Projects.</h3>
+        </section>
+        
+        <section id="skills">
+            <h1>Skills:</h1>
+            <div class="tech">
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-square-js"></i>
+                <i class="fa-brands fa-react"></i>
+                <i class="fa-brands fa-figma"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-node"></i>
+                <i class="fa-brands fa-java"></i>
+                <i class="fa-brands fa-npm"></i>
+                <i class="fa-brands fa-bootstrap"></i>
+                <img src="./IMG/c.png" alt="c++">
+                <img src="./IMG/cc.png" alt="c#">
+                <img src="./IMG/my.png" alt="mysql">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <section class="c-first">
-                    <article class="c-descrip">
-                        <h1>VG Store</h1>
-                        <p>This is the head page of a videogames store,<br> made with HTML and CSS</p>
-                    </article>
-                    <figure>
-                        <img src="./IMG/1.PNG" alt="videogames">
-                        <a href="http://bigtime.freeoda.com/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
-                    </figure>
-                    
-                </section>
-              </div>
-              <div class="carousel-item">
-                <section class="c-second">
-                    <article class="c-descrip">
-                        <h1>VG Store</h1>
-                        <p>This is the head page of a videogames store,<br> made with HTML and CSS</p>
-                    </article>
-                    <figure>
-                        <img src="./IMG/1.PNG" alt="videogames">
-                        <a href="http://bigtime.freeoda.com/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
-                    </figure>
-                </section>
-              </div>
-              <div class="carousel-item">
-                <section class="c-third">
-                    <article class="c-descrip">
-                        <h1>VG Store</h1>
-                        <p>This is the head page of a videogames store,<br> made with HTML and CSS</p>
-                    </article>
-                    <figure>
-                        <img src="./IMG/1.PNG" alt="videogames">
-                        <a href="http://bigtime.freeoda.com/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
-                    </figure>
-                </section>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
         </section>
     </main>
+    <aside id="contact">
+        <h1>Contact</h1>
+        <h3><i class="fa-sharp fa-solid fa-phone"></i> Cellphone Number: 71037126</h3>
+        <h3><i class="fa-solid fa-envelope"></i> Email: reynero96@gmail.com</h3>
+        <h3><i class="fa-solid fa-location-dot"></i> Location: Santa Cruz de la Sierra, Bolivia</h3>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Me A Message <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    </aside>
+    
     <footer>
-
+      <h2>&copy; 2023 Reynero Torrico</h2>
     </footer>
+
+
+    <section id="modal">
+   
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+           ...
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+           <button type="button" class="btn btn-primary">Save changes</button>
+         </div>
+       </div>
+     </div>
+   </div>
+     </section>
+     <button class="scroll-top "><i class="fa-solid fa-arrow-up"></i></button>
+     
+    <script src="./JS/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    <script src="./JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    
 </body>
 </html>
