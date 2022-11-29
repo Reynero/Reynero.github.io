@@ -158,15 +158,21 @@
      <div class="modal-dialog">
        <div class="modal-content">
          <div class="modal-header">
-           <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+           <h1 class="modal-title fs-5" id="exampleModalLabel">Email Message</h1>
            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
          </div>
          <div class="modal-body">
-           ...
+           <form onsubmit="m(); reset(); return false;">
+              <input type="text" id="name" name="name" placeholder="Your Name">
+              <input type="text" id="email" name="email" placeholder="Your Email">
+              <input type="text" id="phone" name="phone" placeholder="Your Phone Number">
+              <textarea name="body" id="body" cols="30" rows="10" placeholder="How can i help you?"></textarea>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
          </div>
          <div class="modal-footer">
            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-           <button type="button" class="btn btn-primary">Save changes</button>
+           
          </div>
        </div>
      </div>
@@ -177,6 +183,23 @@
     <script src="./JS/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function m(){
+        Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "my.teacher966@gmail.com",
+        Password : "3C25C407339C7721295F8C038BA5B5EBAD38",
+        To : "reynero96@gmail.com",
+        From : "reynero96@gmail.com",
+        Subject : document.getElementById("name").value,
+        Body : "Email: " + document.getElementById("email").value + "<br>" +
+                "Phone: " + document.getElementById("phone").value + "<br>" +
+                "Message: " + document.getElementById("body").value  
+    }).then(
+      message => alert("message sent succesfully" + message)
+    );
+      }
+    </script>
 </body>
 </html>

@@ -313,7 +313,26 @@ footer h2{
     opacity: 0;
 }
 /*EXTRA BUTTONS*/
+/*MODAL*/
+#modal form{
+    display: flex;
+    flex-direction: column;
 
-/*MAKE YOUR PIC INTERACTIVE */
-/*MAKE SURE THE NAV BAR SHIFTS ITS FORM WHEN YOU SCROLL DOWN*/
-/*FINISH FOOTER*/
+}
+form input{
+    outline: none;
+    background-color: #f5f5f5;
+    border: 0;
+    margin-bottom: 1rem;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+form textarea{
+    background-color: #f5f5f5;
+    outline: none;
+    border: 0;
+    resize: none;
+    font-size: 1.5rem;
+}
+/*MODAL*/
+
