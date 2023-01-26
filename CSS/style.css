@@ -335,4 +335,57 @@ form textarea{
     font-size: 1.5rem;
 }
 /*MODAL*/
-
+@media(max-width: 600px){
+    .nav-name{
+        display: none;
+    }
+    main{
+        grid-column: 1 / 6;
+    }
+    header{
+        grid-column: 1 / 6;
+    }
+    .bout-pic{
+        margin-left: 0;
+    }
+    .bout-pic img{
+        height: 15rem;
+        border: 3.5px solid #ffd43b;
+        border-radius: 100px; 
+    }
+    .bout-pic figcaption{
+        font-size: 1.8rem;
+    }
+    .header-body{
+        width: fit-content;
+    }
+    .header-ul a{
+        font-size: 2rem;
+        margin: 0;
+    }
+    #title-about{
+        font-size: 3.2rem;
+    }
+    .descrip h1{
+        font-size: 2rem;
+    }
+    .descrip p {
+        font-size: 1.5rem;
+        
+    }
+    #carru{
+        grid-column: 1 / 6;
+    }
+    .carousel{
+        width: 20rem;
+    }
+    #contact{
+        margin-left: 0;
+    }
+    #contact button{
+        left: 10rem;
+    }
+    .more-projects{
+        margin-left: 0;
+    }    
+}
