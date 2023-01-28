@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Presentation Webpage</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style2.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -58,19 +59,17 @@
     </header>
     <main>
         <section id="carru">
-            <section class="main-descrip">
+            <article class="main-descrip">
                 <h1 class="title2">-Portfolio-</h1>
                 <h4>Recent Projects</h4>
-            </section>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <section class="c-first">
+            </article class="container-all">
+              <input type="radio" id="1" name="image-slide" hidden>
+              <input type="radio" id="2" name="image-slide" hidden>
+              <input type="radio" id="3" name="image-slide" hidden>
+
+              <div class="slide">
+
+                  <div class="item-slide item1">
                         <article class="c-descrip">
                             <h1>Grand Hotel</h1>
                             <p>This is the head page of a hotel,<br> made with HTML and CSS</p>
@@ -79,43 +78,39 @@
                             <img src="./IMG/2.PNG" alt="hotel">
                             <a href="http://bigtime.freeoda.com/w/HTMLhotel/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
                         </figure>
-                        
-                    </section>
                   </div>
-                  <div class="carousel-item">
-                    <section class="c-second">
-                        <article class="c-descrip">
-                            <h1>Developers Directory</h1>
-                            <p>A directory of developers where you can find the right person to work with you, made with HTML, CSS and Javascript</p>
-                        </article>
-                        <figure>
-                            <img src="./IMG/6.PNG" alt="directory">
-                            <a href="http://bigtime.freeoda.com/w/devDirec/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
-                        </figure>
-                    </section>
+
+                  <div class="item-slide item2">
+                    <article class="c-descrip">
+                      <h1>Developers Directory</h1>
+                      <p>A directory of developers where you can find the right person to work with you, made with HTML, CSS and Javascript</p>
+                  </article>
+                  <figure>
+                      <img src="./IMG/6.PNG" alt="directory">
+                      <a href="http://bigtime.freeoda.com/w/devDirec/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
+                  </figure>
                   </div>
-                  <div class="carousel-item">
-                    <section class="c-third">
-                        <article class="c-descrip">
-                            <h1>JS Practice</h1>
-                            <p>This webpage stores several useful Javascript components and functions which help me to improve my skills.</p>
-                        </article>
-                        <figure>
-                            <img src="./IMG/7.PNG" alt="JS">
-                            <a href="http://bigtime.freeoda.com/w/webPageExercise/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
-                        </figure>
-                    </section>
+
+                  <div class="item-slide item3">
+                    <article class="c-descrip">
+                      <h1>JS Practice</h1>
+                      <p>This webpage stores several useful Javascript components and functions which help me to improve my skills.</p>
+                  </article>
+                  <figure>
+                      <img src="./IMG/7.PNG" alt="JS">
+                      <a href="http://bigtime.freeoda.com/w/webPageExercise/" target="_blank"><button>Take Me There <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>    
+                  </figure>
                   </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
+
+              <div class="paging">
+                <label for="1" class="paging-item"></label>
+                <label for="2" class="paging-item"></label>
+                <label for="3" class="paging-item"></label>
+              </div>
+            <article >
+
+            </article>
               <h3 class="more-projects"><a href="http://bigtime.freeoda.com/">See More</a> Projects.</h3>
         </section>
         
@@ -203,3 +198,5 @@
     </script>
 </body>
 </html>
+
+
