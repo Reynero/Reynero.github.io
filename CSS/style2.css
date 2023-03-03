@@ -145,10 +145,10 @@ input[id="3"]:checked ~ .paging-item[for="3"]{
         transform: translateX(0);
     }
     .item-slide h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .c-descrip p{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
     .item-slide button{
         right: 2rem;
