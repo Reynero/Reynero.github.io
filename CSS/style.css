@@ -386,20 +386,35 @@ form textarea{
 
 @media(max-width: 400px){
     .nav-ul a{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: black;
     }
     header{
         grid-column: 1 / 6;
-        height: 50rem;
+        height: 54rem;
+    }
+    .main-descrip h1{
+        font-size: 3rem;
     }
     #skills{
         height: 25rem;
     }
+    #skills h1{
+        font-size: 3rem;
+    }
     .tech{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .tech img{
-        width: 4rem;
+        width: 3.5rem;
+    }
+    #contact h1{
+        font-size: 3rem;
+    }
+    footer{
+        height: 6rem;
+    }
+    footer h2{
+        margin-top: 2rem;
     }
 }
