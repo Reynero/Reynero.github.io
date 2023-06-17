@@ -383,3 +383,23 @@ form textarea{
         margin-left: 0;
     }    
 }
+
+@media(max-width: 400px){
+    .nav-ul a{
+        font-size: 1.4rem;
+        color: black;
+    }
+    header{
+        grid-column: 1 / 6;
+        height: 50rem;
+    }
+    #skills{
+        height: 25rem;
+    }
+    .tech{
+        font-size: 4rem;
+    }
+    .tech img{
+        width: 4rem;
+    }
+}
