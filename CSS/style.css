@@ -420,8 +420,14 @@ form textarea{
     
 }
 @media(max-width: 300px){
+    /**.descrip p{
+        font-size: 1.3rem;
+    }
+    .descrip h1{
+        font-size: 1.5rem;
+    }*/
     .nav-ul a{
-        font-size: .8rem;
+        font-size: .6rem;
         font-weight: bold;
         color: black;
     }

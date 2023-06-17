@@ -135,7 +135,7 @@ input[id="3"]:checked ~ .paging-item[for="3"]{
         transform: translate3d(calc(-100%*2), 0, 0);
     }
 }
-@media(max-width: 600px){
+@media(max-width: 700px){
     .slide{
         grid-column: 1 / 6;
     }
@@ -158,4 +158,17 @@ input[id="3"]:checked ~ .paging-item[for="3"]{
         left: 0;
         width: 20rem;
     }
+}
+@media(max-width: 400px){
+    .item-slide img{
+        width: 16rem;
+    }
+    .item-slide button{
+        width: 12rem;
+    }
+    .c-descrip h1{
+        font-size: 2.2rem;
+    }
+    
+    
 }
