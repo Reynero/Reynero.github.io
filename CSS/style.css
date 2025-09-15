@@ -117,6 +117,10 @@ header{
     font-size: 2rem;
     text-align: justify;
 }
+.descrip a{
+    font-size: 2rem;
+    text-align: justify;
+}
 .bout-pic img{
     height: 25rem;
     border: 6px solid #ffd43b;
